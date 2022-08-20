@@ -1,33 +1,33 @@
 import { Container } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Searcher } from "./components/Searcher/Searcher";
+import { UserCard } from "./containers/userCard/UserCard";
 import { getGithubUser } from "./services/users";
 
  const App = () => {
 
-  const [ inputUser, setInputUser ] = useState('octocat');
-  const [ userState, setUserState ] = useState(inputUser);
-  const [ notFound, setNotFound ] = useState(false);
+  const [ inputUser, setInputUser ] = useState( 'octocat' );
+  const [ userState, setUserState ] = useState( inputUser );
+  const [ notFound, setNotFound ] = useState( false );
 
   const gettingUser = async (user) => {
-    const userResponse = await getGithubUser(user);
+    const userResponse = await getGithubUser( user );
 
     if(userState === 'octocat'){
-      localStorage.setItem('octocat', JSON.stringify(userResponse))
+      localStorage.setItem('octocat', JSON.stringify( userResponse ))
     }
     if(userResponse.message === 'Not Found'){
       const { octocat } = localStorage;
-      setInputUser(octocat);
-      setNotFound(true);
+      setInputUser( octocat );
+      setNotFound( true );
     }else{
-      setUserState(userResponse);
-      setNotFound(false);
+      setUserState( userResponse );
+      setNotFound( false );
     }
-    console.log(userState)
   }
   useEffect(()=>{
-    gettingUser(inputUser);
-  },[inputUser]);
+    gettingUser( inputUser );
+  },[ inputUser ]);
 
   return (
     <Container sx={{
@@ -41,7 +41,8 @@ import { getGithubUser } from "./services/users";
       alignItems: "center",
 
     }}>
-      <Searcher inputUser={inputUser} setInputUser={setInputUser} />
+      <Searcher inputUser={ inputUser } setInputUser={ setInputUser } />
+      <UserCard userState={ userState }/>
     </Container>
   );
 };

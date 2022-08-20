@@ -1,18 +1,18 @@
 import { Stack, Typography } from "@mui/material";
 
 export const PrincipalInformation = (props) => {
-
-    const {userState} = props;
-    const { name, login, created_at  } = userState;
+  const { userState } = props;
+  const { name, login, created_at } = userState;
 
   return (
     <>
-        <Stack>
-            <Typography>{name}</Typography>
-            <Typography>{created_at}</Typography>
-            <Typography>{login}</Typography>
-        </Stack>
-        
+      <Stack direction="row" justifyContent="space-between">
+        <Typography variant="h4">{name}</Typography>
+        <Typography variant="subtitle2">{created_at}</Typography>
+      </Stack>
+      <Stack>
+        <Typography variant="caption">{`@${login}`}</Typography>
+      </Stack>
     </>
-  )
-}
+  );
+};
