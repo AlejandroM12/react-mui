@@ -11,9 +11,9 @@ export const UserCard = (props) => {
   return (
     <Grid 
         container 
-        spacing={3}
+        spacing={1}
         sx={{
-            marginTop:"15px",
+            marginTop:"5px",
             
         }}
     >

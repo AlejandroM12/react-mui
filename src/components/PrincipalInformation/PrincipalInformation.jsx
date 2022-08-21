@@ -8,7 +8,7 @@ export const PrincipalInformation = (props) => {
     <>
       <Stack direction="row" justifyContent="space-between">
         <Typography variant="h4">{name}</Typography>
-        <Typography variant="subtitle2">{created_at}</Typography>
+        <Typography variant="subtitle2">Created at: {created_at}</Typography>
       </Stack>
       <Stack>
         <Typography variant="caption">{`@${login}`}</Typography>

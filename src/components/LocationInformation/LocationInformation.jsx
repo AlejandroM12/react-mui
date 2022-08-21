@@ -8,7 +8,7 @@ export const LocationInformation = (props) => {
   const { userState } = props;
   const { location, twitter_username, blog, company } = userState;
   return (
-    <Grid container spacing={2} sx={{marginTop: "15px"}}>
+    <Grid container spacing={1} sx={{marginTop: "15px"}}>
       <Grid item xs={6}>
         <Stack direction="row" spacing={2}>
           <LocationOnIcon />
