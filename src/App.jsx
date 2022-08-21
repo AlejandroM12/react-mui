@@ -36,13 +36,15 @@ const App = () => {
   return (
     <ThemeProvider theme={finalTheme}>
       <Container
+         maxWidth="xxl"
         sx={{
           borderRadius: "3rem",
           boxShadow: `.8rem .8rem 1.4rem #c8d0e7, 
         -.2rem -.2rem 1.8rem #FFFFFF`,
-          width: "90vw",
-          height: "90vh",
+          width: "90%",
+          height: "90%",
           marginTop: "20px",
+          marginBottom: "20px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

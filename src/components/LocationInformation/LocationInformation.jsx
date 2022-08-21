@@ -10,7 +10,7 @@ export const LocationInformation = (props) => {
   const { location, twitter_username, blog, company } = userState;
   return (
     <Grid container spacing={1} sx={{ marginTop: "15px" }}>
-      <Grid item xs={6}>
+      <Grid item sm={12} xs={12} md={6}>
         <Stack
           direction="row"
           spacing={2}
@@ -33,7 +33,7 @@ export const LocationInformation = (props) => {
           )}
         </Stack>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item sm={12} xs={12} md={6}>
         <Stack
           direction="row"
           spacing={2}
@@ -57,7 +57,7 @@ export const LocationInformation = (props) => {
           )}
         </Stack>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item sm={12} xs={12} md={6}>
         <Stack
           direction="row"
           spacing={2}
@@ -85,7 +85,7 @@ export const LocationInformation = (props) => {
           )}
         </Stack>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item  sm={12} xs={12} md={6}>
         <Stack
           direction="row"
           spacing={2}
