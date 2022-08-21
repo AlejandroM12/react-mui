@@ -39,7 +39,7 @@ export const Searcher = (props) => {
             InputProps={{
               endAdornment: (
                 <IconButtonContainer onClick={handleSubmit} size="small">
-                  <SearchIcon />
+                  <SearchIcon sx={{color: `#6D5DFC`}}/>
                 </IconButtonContainer>
               ),
             }}

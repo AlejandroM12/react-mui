@@ -116,7 +116,7 @@ export const IconButtonContainer = styled(IconButton)(({theme}) => ({
     inset 0px 0px 0px 0px #fff9,        
     inset 0px 0px 0px 0px #0001`,
     transition: `box-shadow 0.6s cubic-bezier(.79,.21,.06,.81)`,
-    color: `color: rgba(42, 52, 84, 1)`
+    color: `#6D5DFC`
 }));
 export const UserNotFound = styled('div')(({theme}) => ({
   display: "flex",
