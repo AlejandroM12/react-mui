@@ -1,5 +1,5 @@
 # GitHub | User Searcher
-Aplicación para buscar usuarios, traídos desde la API de GitHub(https://api.github.com/users)
+Aplicación para buscar usuarios, traídos desde la API de [GitHub](https://api.github.com/users)
 [![image cover](src/assets/CPT2208211717-1229x584.gif)]
 
 ## :nut_and_bolt: Tecnologias
